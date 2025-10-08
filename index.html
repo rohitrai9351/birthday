@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Invitation - Shivam Rai</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      padding: 30px;
+      max-width: 450px;
+      width: 90%;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #ff6b6b;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      color: #ff6b6b;
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+    }
+
+    p {
+      margin: 6px 0;
+      font-size: 1rem;
+    }
+
+    .details {
+      background: #ffecec;
+      border-radius: 12px;
+      padding: 15px;
+      margin-top: 15px;
+      text-align: left;
+      font-size: 0.95rem;
+    }
+
+    .details strong {
+      color: #ff6b6b;
+    }
+
+    button {
+      background: linear-gradient(90deg, #ff6b6b, #ff8a80);
+      border: none;
+      color: white;
+      padding: 10px 18px;
+      font-size: 1rem;
+      border-radius: 8px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 15px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <!-- Replace 'shivam-photo.jpg' with your actual photo path or URL -->
+    <img src="3e5a3a18-0dec-4d76-ab3c-0e80b56fcf63.jpeg" alt="Shivam Rai Photo">
+
+    <h1>🎉 You're Invited! 🎉</h1>
+    <p>Join us to celebrate <strong>Shivam Rai's Birthday</strong>!</p>
+    <p>Come for an evening filled with fun, food, and laughter!</p>
+
+    <div class="details">
+      <p>📅 <strong>Date:</strong> 14 October 2025</p>
+      <p>⏰ <strong>Time:</strong> 7:00 PM onwards</p>
+      <p>📍 <strong>Venue:</strong> Barbeque Nation, Varanasi</p>
+      <p>🎁 <strong>Theme:</strong> Bright & Casual</p>
+    </div>
+
+    <button onclick="alert('Thank you for confirming your presence! 🎂')">RSVP Now</button>
+
+    <footer>
+      For queries, contact: +91-XXXXXXXXXX
+    </footer>
+  </div>
+
+  <script>
+    // Optional: Add a small animation when card loads
+    document.querySelector('.card').style.opacity = 0;
+    window.onload = () => {
+      const card = document.querySelector('.card');
+      card.style.transition = 'opacity 1s ease';
+      card.style.opacity = 1;
+    };
+  </script>
+</body>
+</html>
